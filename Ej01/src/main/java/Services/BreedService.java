@@ -11,6 +11,7 @@ se le informará al usuario y se mostrará la lista ordenada.
 
 package Services;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class BreedService {
@@ -19,11 +20,6 @@ public class BreedService {
 
     public void addBreed(String breed){
         breeds.add(breed);
-    }
-
-    public void addBreed(){
-        System.out.println("Ingrese la raza que desea añadir a la lista");
-        breeds.add(input.next());
     }
 
     public void iterate(){
@@ -35,10 +31,6 @@ public class BreedService {
             if (input.next().equalsIgnoreCase("n")) {flag = false; }
         } while (flag);
         showBreedList();
-    }
-
-    public void showBreedList(){
-        breeds.toString();
     }
 
     public boolean lookForBreed(String breed){
@@ -61,6 +53,16 @@ public class BreedService {
         else {
             System.out.println("La raza "+ searchedBreed +" no se encontró en la lista.");
         }
+        breeds.sort(Comparator.naturalOrder());
         showBreedList();
+    }
+
+    private void addBreed(){
+        System.out.println("Ingrese la raza que desea añadir a la lista");
+        breeds.add(input.next());
+    }
+
+    private void showBreedList(){
+        System.out.println(breeds.toString());
     }
 }
