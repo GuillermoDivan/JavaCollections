@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb3bde6c-8955-415b-b196-f1504e242e26" name="Changes" comment="" />
+    <list default="true" id="fb3bde6c-8955-415b-b196-f1504e242e26" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Services/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Services/ServiceLuz.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Guille/Desktop/LetsCode/JavaGlobant/clase 62 a 70 (Collections)/Ej03"
+    "last_opened_file_path": "C:/Users/Guille/Desktop/LetsCode/JavaGlobant/clase 62 a 70 (Collections)/Ej04"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
