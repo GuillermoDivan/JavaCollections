@@ -123,11 +123,3 @@ public class ServicePelicula {
         Collections.reverse(movieList);
     }
 }
-
-
-
-
-/*
-• Ordenar las películas por título, alfabéticamente y mostrarlo en pantalla.
-• Ordenar las películas por director, alfabéticamente y mostrarlo en pantalla.
-* */
