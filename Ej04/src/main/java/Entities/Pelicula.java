@@ -22,7 +22,7 @@ pantalla.
 package Entities;
 import java.util.Comparator;
 
-public class Pelicula {
+public class Pelicula implements Comparable<Pelicula> {
     private String title;
     private String director;
     private double duration;
@@ -64,6 +64,11 @@ public class Pelicula {
                 ", director='" + director + '\'' +
                 ", duration=" + duration +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Pelicula o) {
+        return this.title.compareTo(o.getTitle());
     }
 }
 

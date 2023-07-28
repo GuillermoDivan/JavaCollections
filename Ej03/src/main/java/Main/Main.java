@@ -8,6 +8,5 @@ public class Main {
         service.addStudentToList();
         service.showStudentList();
         service.lookForStudent();
-        service.lookForStudent();
     }
 }

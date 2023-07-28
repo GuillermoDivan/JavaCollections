@@ -54,6 +54,14 @@ public class ServicePelicula {
         movieList.sort(Comparator.comparing(Pelicula::getDuration).reversed());
     }
 
+   public void sortByTitleMovieList() {
+        movieList.sort(Comparator.comparing(Pelicula::getTitle));
+    }
+    public void reverseSortByTitleMovieList() {
+        movieList.sort(Comparator.comparing(Pelicula::getTitle).reversed());
+    }
+
+    //Métodos con método burbuja.
     /*public void reverseSortByDurationMovieList() {
         boolean flag;
         for (int i = 0; i < movieList.size() - 1; i++) {
@@ -97,21 +105,14 @@ public class ServicePelicula {
         }
     }*/
 
+    //Métodos utilizando las clases comparator.
     /*public void sortByTitleMovieList(){
         Collections.sort(movieList, new MovieComparatorByTitle());
-    }*/
-
-    /*public void reverseSortByTitleMovieList(){
-        Collections.sort(movieList, new MovieComparatorByTitle());
-        Collections.reverse(movieList);
-    }*/
-
-    public void sortByTitleMovieList() {
-        movieList.sort(Comparator.comparing(Pelicula::getTitle));
     }
 
-    public void reverseSortByTitleMovieList() {
-        movieList.sort(Comparator.comparing(Pelicula::getTitle).reversed());
+    public void reverseSortByTitleMovieList(){
+        Collections.sort(movieList, new MovieComparatorByTitle());
+        Collections.reverse(movieList);
     }
 
     public void sortByDirectorMovieList(){
@@ -121,5 +122,5 @@ public class ServicePelicula {
     public void reverseSortByDirectorMovieList(){
         Collections.sort(movieList, new MovieComparatorByDirector());
         Collections.reverse(movieList);
-    }
+    }*/
 }

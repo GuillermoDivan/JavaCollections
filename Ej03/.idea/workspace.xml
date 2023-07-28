@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb3bde6c-8955-415b-b196-f1504e242e26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Ej06/src/main/java/Entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ej06/src/main/java/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ej06/src/main/java/Services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ej06/src/main/java/Services/ServiceMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Services/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Services/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Services/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Services/ServiceLuz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Entities/MovieComparatorByDirector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej04/src/main/java/Services/Entities/MovieComparatorByDirector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Entities/MovieComparatorByTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej04/src/main/java/Services/Entities/MovieComparatorByTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Entities/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej04/src/main/java/Services/Entities/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ej04/src/main/java/Services/ServicePelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ej04/src/main/java/Services/ServicePelicula.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +48,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Guille/Desktop/LetsCode/JavaGlobant/clase 62 a 70 (Collections)/Ej04"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Guille/Desktop/LetsCode/JavaGlobant/clase 62 a 70 (Collections)/Ej04&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

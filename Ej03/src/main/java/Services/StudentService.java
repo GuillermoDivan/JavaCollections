@@ -37,16 +37,16 @@ public class StudentService {
         } while(flag);
     }
 
-    public void lookForStudent() {
-        boolean notFound = false;
+    public int lookForStudent() {
         System.out.println("Ingrese el nombre de le alumnx para calcular su nota");
         String searchedStudent = input.next();
         for (int i = 0; i < studentList.size(); i++) {
             if (searchedStudent.equalsIgnoreCase(studentList.get(i).getName())) {
-                finalGrade(searchedStudent); break;
-            } else { notFound = true; }
+                return finalGrade(searchedStudent);
+            }
         }
-        if (notFound) {System.out.println("No se encontró dicho nombre en la lista."); }
+        System.out.println("No se encontró dicho nombre en la lista.");
+        return -1;
     }
 
     public int finalGrade(String searchedStudent){
@@ -54,7 +54,7 @@ public class StudentService {
         for (int i = 0; i < studentList.size(); i++) {
             if (searchedStudent.equalsIgnoreCase(studentList.get(i).getName())) {
                 finalGrade = (studentList.get(i).getGrades().get(0) +
-                        studentList.get(i).getGrades().get(1) + studentList.get(i).getGrades().get(2)) / 3;
+                        studentList.get(i).getGrades().get(1) + studentList.get(i).getGrades().get(2)) /3;
             }
         }
         System.out.println("La nota promedio de "+ searchedStudent+ " es "+ finalGrade +".");

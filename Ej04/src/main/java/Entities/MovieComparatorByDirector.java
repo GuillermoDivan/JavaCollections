@@ -1,3 +1,4 @@
+//Clases comparator para sobreescribir e implementar el método que compara.
 package Entities;
 import java.util.Comparator;
 public class MovieComparatorByDirector implements Comparator<Pelicula> {
