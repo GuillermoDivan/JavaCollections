@@ -1,12 +1,14 @@
 package Services;
 import Entities.*;
-import java.util.HashMap;
-import java.util.Scanner;
+
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class ProductService {
     HashMap<String, Double> ProductList = new HashMap();
     Scanner input = new Scanner(System.in).useDelimiter("\n");
-    public void createProductInProductList(){
+
+    public void createProductInProductList() {
         System.out.println("Ingrese el nombre del producto que desea agregar.");
         String name = input.next();
         System.out.println("Ingrese el precio del producto.");
@@ -15,26 +17,37 @@ public class ProductService {
         ProductList.put(name, price);
     }
 
-    public void showProductList(){
-        System.out.println(ProductList.toString());
+    public void showProductList() {
+        System.out.print(ProductList.toString());
+        System.out.println("");
     }
 
-    public void modifyPriceOnProductList(){
+    public void modifyPriceOnProductList() {
         System.out.println("Ingrese el nombre del producto cuyo precio desea actualizar.");
         String searchedProduct = input.next();
-
+        System.out.println("Ingrese el nuevo valor para el producto.");
+        double newPrice = input.nextDouble();
+        if (ProductList.containsKey(searchedProduct)){
+            ProductList.put(searchedProduct, newPrice);}
+        else { System.out.println("No se encontró el elemento en la lista."); }
+        System.out.println("La lista ha quedado de este modo luego de las modificaciones:");
+        showProductList();
     }
 
-    public void removeProductOnProductList(){
+    public void removeProductOnProductList() {
+        boolean found = false;
         System.out.println("Ingrese el nombre del producto que desea remover de la lista.");
         String searchedProduct = input.next();
-        ProductList.remove(searchedProduct);
-        System.out.println("La lista actualizada (sin " + searchedProduct + ") es la siguiente:");
+            if (ProductList.containsKey(searchedProduct)){
+                ProductList.remove(searchedProduct);
+                System.out.println("El elemento fue removido con éxito.");
+                found = true;
+            }
+        if (!found) {
+            System.out.println("No se encontró el elemento en la lista.");
+        }
         showProductList();
-        //Analizar caso negativo...
     }
+
+
 }
-
-/*
-
-* */
